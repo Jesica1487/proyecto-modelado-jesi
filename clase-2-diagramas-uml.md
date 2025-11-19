@@ -214,8 +214,8 @@ Imagina que queremos añadir una nueva funcionalidad (como los comentarios), per
     ```
 4.  Ahora, guarda los nuevos diagramas que creaste (Clases, Secuencia, Actividad) en esta rama:
     ```bash
-    git add .
-    git commit -m "feat: Añade diagramas de Clase, Secuencia y Actividad para Comentarios"
+   git commit -m "Clase 1: Casos de uso y diagrama Mermaid"
+git push origin clase-1-introduccion-uml"feat: Añade diagramas de Clase, Secuencia y Actividad para Comentarios"
     ```
 5.  Visualiza tu historial para ver la nueva rama:
     ```bash
