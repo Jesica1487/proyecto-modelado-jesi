@@ -10,7 +10,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## jesvqz1487_blog
+
+Mi versión personal del proyecto "Institución Digital" desarrollada como parte del curso de Modelado de Software.
+
+### [1.0.0] - 2025-11-20
+
+#### Added (jesvqz1487_blog)
+- Fork independiente del proyecto original IES9018/proyecto-modelado-2025
+- Diagramas UML profesionales para Clases 1, 2 y 3 (6 imágenes)
+- Documentación completa de casos de uso, diagramas de clases, secuencia y actividad
+- Arquitectura MVC documentada con patrones de diseño (Facade, Singleton)
+- Reorganización profesional por carpetas (clase-1/, clase-2/, clase-3/)
+- README documentado por cada clase con descripciones de diagramas
+- Release v1.0.0 publicada en GitHub
+- Estructura normalizada: archivos en kebab-case, diagramas con fuentes .drawio
+- LICENSE MIT para proyecto personal
+
+#### Changed (jesvqz1487_blog)
+- Estructura de carpetas: de DIAGRAMA/ a clase-1/clase-2/clase-3/
+- Nombres de archivos: de MAYÚSCULAS a kebab-case (minúsculas con guiones)
+- Documentación orientada a portafolio profesional
+
+---
+
+## [Unreleased] - Proyecto Original IES9018
 
 ### Added
 - Clase 4: Versionado Semántico, Tags, CHANGELOG y Fork Workflow

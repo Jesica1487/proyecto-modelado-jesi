@@ -1,96 +1,130 @@
-### 🏫 **Institución:** IES 9-018 "Gobernador Celso Jaque"
-### 📚 **Carrera:** Tecnicatura Superior en Desarrollo de Software
-### 📖 **Materia:** Modelado de Software
-### 👨‍🏫 **Profesor:** Paulo Alvarez
----
-# Proyecto de Aprendizaje: Modelado de Software - Institución Digital
+# jesvqz1487_blog v1.0.0
 
-## ¡Bienvenido/a!
+> Mi proyecto personal de blog desarrollado para el curso de **Modelado de Software** en IES 9-018 "Gobernador Celso Jaque".
 
-Este repositorio contiene todo el material de clase para la materia "Modelado de Software". Nuestro objetivo es aprender los fundamentos del diseño y la arquitectura de software de una manera práctica y aplicada. Para ello, no solo estudiaremos teoría, sino que construiremos, paso a paso, el modelo de un proyecto real: un Sistema de Gestión de Contenidos (CMS) llamado **"Institución Digital"**.
+Este es un fork independiente del proyecto original [IES9018/proyecto-modelado-2025](https://github.com/IES9018/proyecto-modelado-2025) que ahora tiene su propia identidad, versionado y hoja de ruta.
 
 ---
 
-## ¿Cómo Usar este Repositorio?
+## 🌟 Características Principales
 
-Sigue estos pasos para sacar el máximo provecho del material.
+### v1.0.0 (Release Actual)
 
-### Paso 1: Clona el Repositorio
+- ✅ **Sistema de Casos de Uso** documentado con diagramas UML
+- ✅ **Diagramas de Clases** para estructura de datos (Usuario, Articulo, Comentario)
+- ✅ **Diagramas de Secuencia** para modelar interacciones entre objetos
+- ✅ **Diagramas de Actividad** para flujos de negocio complejos
+- ✅ **Arquitectura MVC** completamente documentada
+- ✅ **Patrones de Diseño** implementados (Facade, Singleton)
+- ✅ **Documentación profesional** por cada módulo
 
-Para tener una copia completa del proyecto en tu computadora, necesitarás clonar este repositorio. Abre una terminal o línea de comandos y ejecuta el siguiente comando (reemplaza la URL con la URL real de tu repositorio de GitHub):
+### Funcionalidades del Blog
 
-```bash
-# Clona el proyecto a tu máquina local
-git clone https://github.com/IES9018/proyecto-modelado-2025.git
+- Sistema base de **CRUD de Artículos**
+- Sistema de **Comentarios** para visitantes
+- **Autenticación** de autores
+- **Dashboard** para gestión de contenido
 
-# Entra en la carpeta del proyecto
-cd tu-repositorio
+---
+
+## 🏗️ Estructura del Proyecto
+
+```
+jesvqz1487_blog/
+├── clase-1/                    # Casos de Uso y Git Básico
+│   ├── README.md
+│   ├── caso-uso-principal.jpg
+│   ├── caso-uso-secundario.jpg
+│   └── diagrama-completo.jpg
+├── clase-2/                    # Diagramas UML (Clases, Secuencia, Actividad)
+│   ├── README.md
+│   └── diagrama-clases.jpg
+├── clase-3/                    # Arquitectura MVC y Patrones de Diseño
+│   ├── README.md
+│   └── arquitectura-mvc.jpg
+├── README.md                   # Este archivo
+├── CHANGELOG.md                # Historial de cambios
+├── LICENSE                     # Licencia MIT
+└── .gitignore
 ```
 
-### Paso 2: Sigue las Clases en Orden
+---
 
-El aprendizaje está diseñado para ser progresivo. Los archivos más importantes son los tutoriales de cada clase. Debes seguirlos en orden:
+## 📊 Diagramas y Documentación
 
-1.  **[`clase-1-introduccion-uml.md`](./clase-1-introduccion-uml.md)**: Aprenderás los conceptos básicos, a definir los requisitos de un sistema con Casos de Uso y tus primeros comandos de Git.
-2.  **[`clase-2-diagramas-uml.md`](./clase-2-diagramas-uml.md)**: Diseñarás la estructura interna del sistema con Diagramas de Clases y modelarás sus flujos con Diagramas de Secuencia y Actividad.
-3.  **[`clase-3-principios-patrones-arquitecturas.md`](./clase-3-principios-patrones-arquitecturas.md)**: Aprenderás a refinar tu diseño con principios profesionales, patrones y la arquitectura MVC para que tu software sea de alta calidad.
+### Clase 1: Introducción a UML y Casos de Uso
+📍 [Ver carpeta](./clase-1/)
 
-### Paso 3: Consulta el Glosario
+- Definición de actores principales: Autor, Visitante
+- Casos de uso: Publicar Artículo, Leer Artículo, Comentar Artículo
+- Diagramas visuales en JPG
 
-¿Encuentras un término que no entiendes? ¡No hay problema! El archivo [`glosario-desarrollo-software.md`](./glosario-desarrollo-software.md) es tu diccionario personal. Contiene explicaciones sencillas, analogías y ejemplos de todos los conceptos técnicos que veremos.
+### Clase 2: Diagramas de Clases, Secuencia y Actividad
+📍 [Ver carpeta](./clase-2/)
 
-### Paso 4: Explora el Historial (Para los Curiosos)
+- **Diagrama de Clases**: Estructura de Usuario, Articulo, Comentario con relaciones many-to-many
+- **Diagrama de Secuencia**: Flujo de "Comentar Artículo" paso a paso
+- **Diagrama de Actividad**: Proceso de "Publicar Artículo" con validaciones
 
-Una de las herramientas más poderosas para aprender es ver cómo se construyó el proyecto. Puedes usar el comando `git log` en tu terminal para ver el historial de todos los "puntos de guardado" (commits). Prueba este comando para una vista gráfica y resumida:
+### Clase 3: Arquitectura MVC y Patrones de Diseño
+📍 [Ver carpeta](./clase-3/)
 
-```bash
-git log --oneline --graph --all
+- **Arquitectura MVC**: Separación de Modelo, Vista, Controlador
+- **Principios**: Alta Cohesión, Bajo Acoplamiento
+- **Patrones**: Facade (SistemaBlog), Singleton (ServicioAutenticacion)
+- Diagrama conceptual de la arquitectura completa
+
+---
+
+## 🔄 Flujo de Trabajo y Versionado
+
+Este proyecto sigue **Semantic Versioning (SemVer)** para versiones:
+
+```
+v MAJOR . MINOR . PATCH
+  |       |       |
+  |       |       └─ Correcciones de bugs
+  |       └─────────── Nuevas funcionalidades (compatible)
+  └────────────────── Cambios que rompen compatibilidad
 ```
 
-Esto te mostrará las ramas y cómo se fueron fusionando, permitiéndote entender el flujo de trabajo real de un desarrollador.
+**Releases publicadas:**
+
+- **v1.0.0** (2025-11-20): Versión inicial con Clases 1-3, diagramas UML, arquitectura MVC
+
+**Roadmap futuro:**
+
+- [ ] v1.1.0 — Sistema de categorías mejorado
+- [ ] v1.2.0 — Sistema de etiquetas/tags
+- [ ] v2.0.0 — Migración a arquitectura hexagonal
 
 ---
 
-## Estructura de Archivos
+## 📚 Recursos y Referencias
 
-> **Nota sobre Diagramas:** Este repositorio utiliza [Mermaid](https://mermaid-js.github.io/mermaid/#/) para la creación de diagramas directamente en Markdown. Puedes copiar el código de cualquier diagrama Mermaid y pegarlo en [mermaid.live](https://mermaid.live/) para visualizarlo y experimentar con él.
-
-*   `README.md`: Esta guía que estás leyendo.
-
-**Documentos de Apoyo y Flujo de Trabajo:**
-
-*   [`herramientas-esenciales.md`](./herramientas-esenciales.md): **(Leer primero)** Guía de instalación y uso de Git, GitHub, diagrams.net y VS Code.
-*   [`flujo-trabajo-colaborativo.md`](./flujo-trabajo-colaborativo.md): **(Muy importante)** Explica cómo usar Forks y Pull Requests, el método que usaremos para las entregas.
-*   [`CHANGELOG.md`](./CHANGELOG.md): Documenta todos los cambios significativos en el material del curso, ideal para entender la evolución del proyecto.
-*   [`guia-uso-ia-aprender.md`](./guia-uso-ia-aprender.md): **(Recomendado)** Enseña cómo usar una IA como Gemini de forma efectiva y ética para potenciar tu aprendizaje.
-*   [`fundamentos-arquitectura-software.md`](./fundamentos-arquitectura-software.md): Lectura recomendada para entender los conceptos de alto nivel detrás de nuestras decisiones de diseño.
-*   [`glosario-desarrollo-software.md`](./glosario-desarrollo-software.md): Tu diccionario de consulta para todos los términos técnicos.
-
-**Documentos del Proyecto y Tarea:**
-
-*   [`tarea-proyecto-final.md`](./tarea-proyecto-final.md): **(Importante)** Contiene las instrucciones detalladas de la tarea final del curso.
-*   [`rubrica-evaluacion.md`](./rubrica-evaluacion.md): Describe cómo será evaluado tu trabajo.
-*   [`LISTA_ESTUDIANTES.md`](./LISTA_ESTUDIANTES.md): Directorio con los enlaces a los repositorios de todos los compañeros para la revisión por pares.
-
-**Tutoriales del Proyecto:**
-
-*   [`clase-1-introduccion-uml.md`](./clase-1-introduccion-uml.md): **(Empezar aquí)** Tutorial de la Clase 1.
-*   [`clase-2-diagramas-uml.md`](./clase-2-diagramas-uml.md): Tutorial de la Clase 2.
-*   [`clase-3-principios-patrones-arquitecturas.md`](./clase-3-principios-patrones-arquitecturas.md): Tutorial de la Clase 3.
-
-**Documentos del Curso:**
-
-*   [`propuesta-pedagogica-modelado-software.md`](./propuesta-pedagogica-modelado-software.md): Documento con la estrategia pedagógica general del curso.
-
-**Diagramas del Sistema (Mermaid):**
-
-*   [`diagrama-sistema-completo.md`](./diagrama-sistema-completo.md): Visión general y evolutiva del sistema "Institución Digital" a través de diagramas Mermaid.
+- **[Keep a Changelog](https://keepachangelog.com/)**: Estándar de changelog utilizado
+- **[Semantic Versioning](https://semver.org/)**: Esquema de versionado
+- **[Diagrams.net](https://diagrams.net/)**: Herramienta para crear diagramas
+- **[Mermaid](https://mermaid.live/)**: Visualización de diagramas en markdown
 
 ---
 
-## Tarea del Proyecto Final
+## 📄 Licencia
 
-La evaluación principal de este curso se basa en la construcción de tu propio proyecto "Institución Digital". Todos los detalles, instrucciones de entrega y expectativas están en los siguientes documentos:
+Este proyecto está bajo licencia **MIT**. Ver archivo [LICENSE](./LICENSE) para más detalles.
 
-*   **[Instrucciones de la Tarea](./tarea-proyecto-final.md):** Lee este documento cuidadosamente para saber qué tienes que hacer.
-*   **[Rúbrica de Evaluación](./rubrica-evaluacion.md):** Consulta este documento para entender cómo será evaluado tu trabajo.
+---
+
+## 👤 Autor
+
+**Jesica** — [@Jesica1487](https://github.com/Jesica1487)
+
+Desarrollador de software en formación. Apasionado por arquitectura de software, UML y buenas prácticas de programación.
+
+---
+
+## 🙏 Agradecimientos
+
+- **Profesor Paulo Alvarez** — Por el material pedagógico original
+- **IES 9-018 "Gobernador Celso Jaque"** — Por el contexto educativo
+- **[Proyecto Original](https://github.com/IES9018/proyecto-modelado-2025)** — Base de este fork
